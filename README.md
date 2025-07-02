@@ -52,7 +52,7 @@ Follow these steps to set up and run the ShoppyGlobe application on your local m
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [YOUR_GITHUB_REPOSITORY_LINK_HERE]
+    git Repository [`https://github.com/Harianki7412/ShoppyGlobe.git`]
     ```
 
 2.  **Install Dependencies:**
