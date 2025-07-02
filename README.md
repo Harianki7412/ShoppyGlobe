@@ -3,7 +3,7 @@
 ShoppyGlobe is a basic e-commerce application built with React, featuring product listing, detailed product views, a shopping cart, and client-side state management using Redux. The application is styled entirely with Tailwind CSS for a responsive and modern look.
 
 ## Live Demo (Optional)
-[Link to your deployed demo Vercel :-[`https://shoppy-globe-git-main-harianki7412s-projects.vercel.app/`]
+[Link to your deployed demo Vercel :-(`https://shoppy-globe-git-main-harianki7412s-projects.vercel.app/`)]
 
 ## Features
 
