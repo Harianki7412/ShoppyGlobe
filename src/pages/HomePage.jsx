@@ -36,7 +36,7 @@ function HomePage() {
         {status === 'loading' && <p className="text-gray-600 text-lg">Loading products...</p>}
         {status === 'failed' && <p className="text-red-600 text-lg">Failed to load products. Please try again later.</p>}
         {status === 'succeeded' && popularProducts.length > 0 && (
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 justify-items-center">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-10 mb-10 m-6 justify-items-center">
             {popularProducts.map((product) => (
               <ProductItem key={product.id} product={product} />
             ))}

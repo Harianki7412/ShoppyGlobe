@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useProducts from '../hooks/useProducts'; // Custom hook for fetching products
 import ProductItem from '../components/ProductItem';
-// import { useDispatch } from 'react-redux';
-// import { fetchAllProducts } from '../redux/productSlice';
+
 
 
 function ProductListPage() {
@@ -63,7 +62,7 @@ function ProductListPage() {
     <div className="py-8">
       <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">Our Products</h1>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 m-10">
         {/* Search Bar */}
         <input
           type="text"
@@ -77,7 +76,7 @@ function ProductListPage() {
         <select
           value={selectedCategory}
           onChange={handleCategoryChange}
-          className="w-full sm:w-auto p-3 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-700 transition-all duration-200"
+          className="w-full sm:w-auto p-3 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-pink-300 text-gray-700 transition-all duration-200"
         >
           {categories.map((cat) => (
             <option key={cat} value={cat}>
@@ -90,7 +89,7 @@ function ProductListPage() {
       {filteredProducts.length === 0 ? (
         <p className="text-center text-xl text-gray-600 mt-10">No products found matching your criteria.</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 m-15 justify-items-center">
           {filteredProducts.map((product) => (
             <ProductItem key={product.id} product={product} />
           ))}

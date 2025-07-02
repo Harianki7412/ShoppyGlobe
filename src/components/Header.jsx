@@ -21,22 +21,13 @@ function Header() {
           ShoppyGlobe
         </Link>
 
-        {/* Hamburger for mobile */}
-        <button
-          className="md:hidden flex items-center px-3 py-2 border rounded text-gray-300 border-gray-400"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
 
         {/* Navigation Menu */}
         <nav className="hidden md:flex space-x-8">
           <NavLink to="/" className={navLinkClass}>Home</NavLink>
           <NavLink to="/products" className={navLinkClass}>Products</NavLink>
         </nav>
+        
 
         {/* Mobile Menu */}
         {menuOpen && (
@@ -70,6 +61,18 @@ function Header() {
             )}
           </Link>
         </div>
+        
+                {/* Hamburger for mobile */}
+        <button
+          className="md:hidden flex items-center px-3 py-2 border rounded text-gray-300 border-gray-400"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
       </div>
     </header>
   )
